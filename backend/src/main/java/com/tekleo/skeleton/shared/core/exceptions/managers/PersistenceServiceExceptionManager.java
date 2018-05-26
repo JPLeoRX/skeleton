@@ -1,7 +1,6 @@
 package com.tekleo.skeleton.shared.core.exceptions.managers;
 
 import com.tekleo.skeleton.shared.core.exceptions.PersistenceServiceException;
-import org.springframework.stereotype.Service;
 
 /**
  * Default exception manager for {@link PersistenceServiceException}
@@ -12,7 +11,6 @@ import org.springframework.stereotype.Service;
  * @author Leo Ertuna
  * @since 23.05.2018 23:39
  */
-@Service
 public class PersistenceServiceExceptionManager implements ExceptionManager<PersistenceServiceException> {
     @Override
     public PersistenceServiceException create() {
