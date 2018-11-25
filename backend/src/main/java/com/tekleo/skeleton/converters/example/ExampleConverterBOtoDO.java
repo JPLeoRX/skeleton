@@ -1,8 +1,8 @@
 package com.tekleo.skeleton.converters.example;
 
 import com.tekleo.skeleton.biz.example.ExampleBO;
-import com.tekleo.skeleton.biz.example.persistence.ExampleDO;
-import com.tekleo.skeleton.shared.core.converters.AbstractConverterBOtoDO;
+import com.tekleo.skeleton.persistence.example.ExampleDO;
+import com.tekleo.webcore.converters.AbstractConverterBOtoDO;
 import org.springframework.stereotype.Service;
 
 /**

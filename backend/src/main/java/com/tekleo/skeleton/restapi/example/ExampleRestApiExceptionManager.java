@@ -1,6 +1,6 @@
 package com.tekleo.skeleton.restapi.example;
 
-import com.tekleo.skeleton.shared.core.exceptions.managers.ExceptionManager;
+import com.tekleo.webcore.exceptions.ExceptionManager;
 import org.springframework.stereotype.Service;
 
 @Service

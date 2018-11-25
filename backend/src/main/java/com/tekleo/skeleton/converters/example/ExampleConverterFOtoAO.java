@@ -2,9 +2,9 @@ package com.tekleo.skeleton.converters.example;
 
 import com.tekleo.skeleton.api.example.ExampleAO;
 import com.tekleo.skeleton.restapi.example.ExampleFO;
-import com.tekleo.skeleton.shared.core.converters.AbstractConverterFOtoAO;
-import com.tekleo.skeleton.shared.date_and_time.Time;
 import com.tekleo.skeleton.shared.id.ExampleId;
+import com.tekleo.webcore.converters.AbstractConverterFOtoAO;
+import com.tekleo.webcore.utils.Time;
 import org.springframework.stereotype.Service;
 
 @Service

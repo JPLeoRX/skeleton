@@ -26,6 +26,48 @@
 
 	<!-- Backend Dependencies -->
 	<dependencies>
+		<!-- Web Core -->
+		<dependency>
+			<groupId>com.tekleo.webcore</groupId>
+			<artifactId>api</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tekleo.webcore</groupId>
+			<artifactId>biz</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tekleo.webcore</groupId>
+			<artifactId>converters</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tekleo.webcore</groupId>
+			<artifactId>entities</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tekleo.webcore</groupId>
+			<artifactId>exceptions</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tekleo.webcore</groupId>
+			<artifactId>persistence</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tekleo.webcore</groupId>
+			<artifactId>rest_api</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tekleo.webcore</groupId>
+			<artifactId>utils</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
 		<!-- Frontend Module -->
 		<dependency>
 			<groupId>com.tekleo</groupId>

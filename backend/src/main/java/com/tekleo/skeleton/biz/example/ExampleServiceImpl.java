@@ -1,6 +1,6 @@
 package com.tekleo.skeleton.biz.example;
 
-import com.tekleo.skeleton.biz.example.persistence.ExamplePersistenceService;
+import com.tekleo.skeleton.persistence.example.ExamplePersistenceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

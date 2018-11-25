@@ -2,7 +2,7 @@ package com.tekleo.skeleton.converters.example;
 
 import com.tekleo.skeleton.api.example.ExampleAO;
 import com.tekleo.skeleton.biz.example.ExampleBO;
-import com.tekleo.skeleton.shared.core.converters.AbstractConverterAOtoBO;
+import com.tekleo.webcore.converters.AbstractConverterAOtoBO;
 import org.springframework.stereotype.Service;
 
 /**

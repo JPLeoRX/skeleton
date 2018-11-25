@@ -4,8 +4,8 @@ import com.tekleo.skeleton.biz.example.ExampleBO;
 import com.tekleo.skeleton.biz.example.ExampleService;
 import com.tekleo.skeleton.converters.example.ExampleConverterAOtoBO;
 import com.tekleo.skeleton.converters.example.ExampleConverterBOtoAO;
-import com.tekleo.skeleton.shared.core.converters.AbstractConverterAOtoBO;
-import com.tekleo.skeleton.shared.core.converters.AbstractConverterBOtoAO;
+import com.tekleo.webcore.converters.AbstractConverterAOtoBO;
+import com.tekleo.webcore.converters.AbstractConverterBOtoAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

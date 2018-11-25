@@ -1,9 +1,7 @@
 package com.tekleo.skeleton.restapi.example;
 
-import com.tekleo.skeleton.api.example.ExampleAO;
-import com.tekleo.skeleton.converters.example.ExampleConverterAOtoRO;
-import com.tekleo.skeleton.shared.core.objects.AbstractRO;
 import com.tekleo.skeleton.shared.id.ExampleId;
+import com.tekleo.webcore.entities.RestApiObject;
 
 /**
  * Sample Rest Object
@@ -13,7 +11,7 @@ import com.tekleo.skeleton.shared.id.ExampleId;
  * @author Leo Ertuna
  * @since 24.03.2018 15:53
  */
-public class ExampleRO implements AbstractRO<ExampleId> {
+public class ExampleRO implements RestApiObject<ExampleId> {
     private String exampleId;
     private String text;
     private long createdAt;

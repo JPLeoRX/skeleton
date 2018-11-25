@@ -1,7 +1,7 @@
 package com.tekleo.skeleton.biz.example;
 
-import com.tekleo.skeleton.shared.core.services.AbstractService;
 import com.tekleo.skeleton.shared.id.ExampleId;
+import com.tekleo.webcore.biz.AbstractService;
 
 /**
  * Sample service interface

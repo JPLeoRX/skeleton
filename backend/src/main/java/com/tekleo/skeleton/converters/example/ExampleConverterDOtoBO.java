@@ -1,9 +1,9 @@
 package com.tekleo.skeleton.converters.example;
 
 import com.tekleo.skeleton.biz.example.ExampleBO;
-import com.tekleo.skeleton.biz.example.persistence.ExampleDO;
-import com.tekleo.skeleton.shared.core.converters.AbstractConverterDOtoBO;
+import com.tekleo.skeleton.persistence.example.ExampleDO;
 import com.tekleo.skeleton.shared.id.ExampleId;
+import com.tekleo.webcore.converters.AbstractConverterDOtoBO;
 import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;

@@ -1,7 +1,7 @@
 package com.tekleo.skeleton.restapi.example;
 
-import com.tekleo.skeleton.shared.core.objects.AbstractFO;
 import com.tekleo.skeleton.shared.id.ExampleId;
+import com.tekleo.webcore.entities.FormObject;
 
 /**
  * Sample Form Object
@@ -11,7 +11,7 @@ import com.tekleo.skeleton.shared.id.ExampleId;
  * @author Leo Ertuna
  * @since 24.03.2018 19:50
  */
-public class ExampleFO implements AbstractFO<ExampleId> {
+public class ExampleFO implements FormObject<ExampleId> {
     private String text;
 
     public String getText() {

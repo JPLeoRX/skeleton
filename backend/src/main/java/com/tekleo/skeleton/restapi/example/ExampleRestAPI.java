@@ -5,11 +5,12 @@ import com.tekleo.skeleton.api.example.ExampleAPI;
 import com.tekleo.skeleton.converters.example.ExampleConverterAOtoRO;
 import com.tekleo.skeleton.converters.example.ExampleConverterFOtoAO;
 import com.tekleo.skeleton.converters.example.ExampleConverterROtoAO;
-import com.tekleo.skeleton.shared.core.converters.AbstractConverterROtoAO;
-import com.tekleo.skeleton.shared.core.exceptions.RestApiException;
-import com.tekleo.skeleton.shared.core.services.AbstractRestApi;
-import com.tekleo.skeleton.shared.rest.ReplyObject;
+
 import com.tekleo.skeleton.shared.id.ExampleId;
+import com.tekleo.webcore.converters.AbstractConverterROtoAO;
+import com.tekleo.webcore.exceptions.tier_exceptions.RestApiException;
+import com.tekleo.webcore.rest_api.AbstractRestApi;
+import com.tekleo.webcore.rest_api.ReplyObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -60,52 +61,53 @@ public class ExampleRestAPI implements AbstractRestApi<ExampleId, ExampleAO, Exa
     }
 
     @RequestMapping(value = "/get/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public @ResponseBody ReplyObject getExample(@PathVariable(value = "id") String id) {
+    public @ResponseBody
+    ReplyObject getExample(@PathVariable(value = "id") String id) {
         try {
-            return ReplyObject.success("example", get(new ExampleId(id)));
+            return ReplyObject.Builder.success("example", get(new ExampleId(id))).build();
         } catch (RestApiException e) {
             e.printStackTrace();
-            return ReplyObject.error("REST API Exception");
+            return ReplyObject.Builder.error("REST API Exception").build();
         }
     }
 
     @RequestMapping(value = "/getAll", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public @ResponseBody ReplyObject getAllExamples() {
         try {
-            return ReplyObject.success("examples", getAll());
+            return ReplyObject.Builder.success("examples", getAll()).build();
         } catch (RestApiException e) {
             e.printStackTrace();
-            return ReplyObject.error("REST API Exception");
+            return ReplyObject.Builder.error("REST API Exception").build();
         }
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public @ResponseBody ReplyObject addExample(@Valid @RequestBody ExampleFO form) {
         try {
-            return ReplyObject.success("example", add(form));
+            return ReplyObject.Builder.success("example", add(form)).build();
         } catch (RestApiException e) {
             e.printStackTrace();
-            return ReplyObject.error("REST API Exception");
+            return ReplyObject.Builder.error("REST API Exception").build();
         }
     }
 
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
     public @ResponseBody ReplyObject deleteExample(@PathVariable(value = "id") String id) {
         try {
-            return ReplyObject.success("example", remove(new ExampleId(id)));
+            return ReplyObject.Builder.success("example", remove(new ExampleId(id))).build();
         } catch (RestApiException e) {
             e.printStackTrace();
-            return ReplyObject.error("API Exception");
+            return ReplyObject.Builder.error("API Exception").build();
         }
     }
 
     @RequestMapping(value = "/deleteAll", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
     public @ResponseBody ReplyObject deleteAllExamples() {
         try {
-            return ReplyObject.success("example", removeAll());
+            return ReplyObject.Builder.success("example", removeAll()).build();
         } catch (RestApiException e) {
             e.printStackTrace();
-            return ReplyObject.error("API Exception");
+            return ReplyObject.Builder.error("API Exception").build();
         }
     }
 }

@@ -1,6 +1,6 @@
 package com.tekleo.skeleton.restapi.example;
 
-import com.tekleo.skeleton.shared.core.exceptions.RestApiException;
+import com.tekleo.webcore.exceptions.tier_exceptions.RestApiException;
 
 public class ExampleRestApiException extends RestApiException {
     public ExampleRestApiException() {

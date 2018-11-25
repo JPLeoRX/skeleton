@@ -1,6 +1,6 @@
 package com.tekleo.skeleton.biz.example;
 
-import com.tekleo.skeleton.shared.core.exceptions.ServiceException;
+import com.tekleo.webcore.exceptions.tier_exceptions.ServiceException;
 
 public class ExampleServiceException extends ServiceException {
     public ExampleServiceException() {

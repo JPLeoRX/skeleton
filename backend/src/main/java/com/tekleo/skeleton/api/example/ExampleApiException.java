@@ -1,6 +1,6 @@
 package com.tekleo.skeleton.api.example;
 
-import com.tekleo.skeleton.shared.core.exceptions.ApiException;
+import com.tekleo.webcore.exceptions.tier_exceptions.ApiException;
 
 public class ExampleApiException extends ApiException {
     public ExampleApiException() {

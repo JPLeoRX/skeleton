@@ -2,8 +2,8 @@ package com.tekleo.skeleton.converters.example;
 
 import com.tekleo.skeleton.api.example.ExampleAO;
 import com.tekleo.skeleton.restapi.example.ExampleRO;
-import com.tekleo.skeleton.shared.core.converters.AbstractConverterROtoAO;
 import com.tekleo.skeleton.shared.id.ExampleId;
+import com.tekleo.webcore.converters.AbstractConverterROtoAO;
 import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;

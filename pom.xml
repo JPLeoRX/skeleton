@@ -38,6 +38,7 @@
 
 	<!-- Project Modules -->
 	<modules>
+		<module>web-core</module>
 		<module>frontend</module>
 		<module>backend</module>
 	</modules>
